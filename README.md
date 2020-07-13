@@ -75,7 +75,7 @@ streamlit run streamlit_app.py
 	- Deploy code through Heroku CLI as instructed below.
 	![](https://i.imgur.com/IsD3VWX.png)
 
-##Report Analysis
+## Report Analysis
 
 ![](https://i.imgur.com/EKqXOo0.jpg)
 
