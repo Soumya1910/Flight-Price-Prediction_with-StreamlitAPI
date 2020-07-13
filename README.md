@@ -1,9 +1,19 @@
 # Flight Price Prediction Application 
 
 ## Table of Content
-
+   * [Demo](#Demo)
+   * [Overview](#Overview)
+   * [Motivation](#Motivation)
+   * [User Input](#User-Input)
+   * [Installation](#Installation)
+   * [Required Files](#Required-Files)
+   * [Technical Aspect](#Technical-Aspect)
+   * [Technologies Used](#Technologies-Used)
 
 ## Demo
+Link: [https://flight-priceprediction.herokuapp.com/](https://flight-priceprediction.herokuapp.com/)
+
+![](https://i.imgur.com/W56an37.png)
 
 
 ## Overview
@@ -16,38 +26,57 @@ Implementation is always good way of learning. As a part of ML engineering life 
 User can predict approximate flight price by providinh required basic details like Preferred Airline, Source, Destination, Number of Stops, departure and arrival details.
 
 ## Installation
-This code is written in Python 3.6. 
+This project is built in Python 3.6.9. If you don't have python installed, you can find it [here](https://www.python.org/downloads/). Make sure you are using latest version of pip package. Create a separate virtual environment:
+```bash
+conda create -n streamlit_app python=3.6
+```
+Then activate conda environment:
+```bash
+conda activate streamlit_app
+```
+After cloning this repository run the below command to install required libraries.
+```bash
+pip install -r requirements.txt
+```
+
+## Required Files
+1. requirements.txt
+2. Procfile
+3. setup.sh
 
 ## Technical Aspect
 This project is divided into three parts:
-1. Model creation
+1. DataScience Life Cycle [for training run __Flight_Fare_Prediction.ipynb__]
 	- Data Collection
-	- Features 
+	- Feature Engineering
+	- Feature Selection
+	- Model creation
+	- Comparision between different models
+	- Hyper Tuning
+	- Model Save to pickle file
 
+2. Predicting model by accessing trained pickel model. [run below command to access the webapp]
+```bash
+streamlit run streamlit_app.py
+```
 
-Training model after doing data preprocessing and analyzing and creating model pickel file. [refer .ipynb file]
-2. Predicting model by accessing trained pickel model.
 3. Cloud deployment.
 
+	- Go to [Heroku Login Page](https://dashboard.heroku.com/login). If you don't have an account then signup with your email id and if you have already an account then login with your credential. 
+	- Click on new application
+
+	![](https://i.imgur.com/z2ATlHX.png)
+
+	- Provide your application name and select a region.
+
+	![](https://i.imgur.com/l89neH2.png)
+
+	- Deploy code through Heroku CLI as instructed below.
+	![](https://i.imgur.com/IsD3VWX.png)
 
 
+## Technologies Used
 
+![](https://forthebadge.com/images/badges/made-with-python.svg)![](https://forthebadge.com/images/badges/uses-git.svg)
 
-## Cloud Deployment
-1. Go to [Heroku Login Page](https://dashboard.heroku.com/login). If you don't have an account then signup with your email id and if you have already an account then login with your credential. 
-2. Click on new application
-
-![](https://i.imgur.com/z2ATlHX.png)
-
-3. Provide your application name and select a region.
-
-![](https://i.imgur.com/l89neH2.png)
-
-4. Connect to Github and provide your credential.
-
-5. Select Repository name and connect to that repo from Heroku platfrom. If you want to deploy your code after each commit, then you can check option for CI pass before deploy.
-
-![](https://i.imgur.com/IsD3VWX.png)
-
-6. Click on Deploy Branch
-
+[<img target="_blank" src="https://i.imgur.com/vIZmm5z.png" width=150>](https://pandas.pydata.org/) [<img target="_blank" src="https://i.imgur.com/TceGbix.jpg" width=150>](https://www.streamlit.io/) [<img target="_blank" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg">](https://matplotlib.org/) 
