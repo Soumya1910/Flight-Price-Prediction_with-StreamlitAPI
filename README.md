@@ -8,6 +8,7 @@
    * [Installation](#Installation)
    * [Required Files](#Required-Files)
    * [Technical Aspect](#Technical-Aspect)
+   * [Report Analysis](#Report-Analysis)
    * [Technologies Used](#Technologies-Used)
 
 ## Demo
@@ -73,6 +74,25 @@ streamlit run streamlit_app.py
 
 	- Deploy code through Heroku CLI as instructed below.
 	![](https://i.imgur.com/IsD3VWX.png)
+
+##Report Analysis
+
+![](https://i.imgur.com/EKqXOo0.jpg)
+
+![](https://i.imgur.com/1AuN80v.jpg)
+
+__Insight:__</br>
+	- Jet Airways airlines fare price are relatively quite high compared with other airlines and Trujet & Spicejet Airlines are having less price.
+
+__Feature Corelation__</br>
+
+![](https://i.imgur.com/b1vFLd0.jpg)
+
+![](https://i.imgur.com/uzEEKrO.png)
+
+![](https://i.imgur.com/8l5xQDe.png)
+
+![](https://i.imgur.com/TfVNKeH.png)
 
 
 ## Technologies Used
